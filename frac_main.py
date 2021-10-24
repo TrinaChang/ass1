@@ -108,7 +108,7 @@ elif args.net == 'full3':
     net = Full3Net(args.hid)
 else:
     net = DenseNet(args.hid)
-    
+
 if list(net.parameters()):
     # initialize weight values
     for m in list(net.parameters()):
